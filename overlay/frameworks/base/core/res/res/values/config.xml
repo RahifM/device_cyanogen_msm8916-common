@@ -160,4 +160,7 @@
         <item>GPS_LOCK=0</item>
     </string-array>
 
+    <!-- Enable doze powersaving mode -->
+    <bool name="config_enableAutoPowerModes">true</bool>
+
 </resources>
