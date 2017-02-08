@@ -17,6 +17,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.bluetooth.disableabsvol=true \
     vendor.bluetooth.soc=pronto \
     vendor.qcom.bluetooth.soc=pronto \
     ro.bluetooth.dun=true \
