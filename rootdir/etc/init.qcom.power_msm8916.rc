@@ -79,3 +79,10 @@ on property:init.svc.recovery=running
 on property:dev.bootcomplete=1
     trigger enable-low-power
     setprop sys.io.scheduler cfq
+
+    #Tune Process_relaim with the values we love
+    write /sys/module/process_reclaim/parameters/enable_process_reclaim 1
+    write /sys/module/process_reclaim/parameters/pressure_min 36
+    write /sys/module/process_reclaim/parameters/pressure_max 74
+    write /sys/module/process_reclaim/parameters/per_swap_size 324
+    write /sys/module/process_reclaim/parameters/swap_opt_eff 32
