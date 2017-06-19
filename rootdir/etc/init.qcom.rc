@@ -436,10 +436,6 @@ service wcnss-service /system/vendor/bin/wcnss_service
     group system wifi radio
     oneshot
 
-service qcom-mem /system/vendor/bin/init.qcom.mem.sh
-    disabled
-    oneshot
-
 # This fixes broken data connection on netmgrd crash
 on property:sys.boot_completed=1
     restart ril-daemon
