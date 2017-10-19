@@ -24,6 +24,9 @@ persist.hwc.mdpcomp.enable=true
 persist.hwc.ptor.enable=true
 debug.enable.sglscale=1
 
+# Maintainer
+ro.cardinal.maintainer=Rahif ツ
+
 # Media
 media.aac_51_output_enabled=true
 persist.media.treble_omx=false
