@@ -1,3 +1,4 @@
 subdirs = [
     "hardware/wifi_offload",
+    "libhidl",
 ]
