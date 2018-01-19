@@ -229,12 +229,18 @@ PRODUCT_PACKAGES += \
 # Wi-Fi
 PRODUCT_PACKAGES += \
     libwcnss_qmi \
-    wcnss_service
+    wcnss_service \
+    libQWiFiSoftApCfg \
+    libqsap_sdk
 
 PRODUCT_PACKAGES += \
     hostapd \
+    dhcpcd.conf \
+    hostapd_default.conf \
     wpa_supplicant \
-    wpa_supplicant.conf
+    p2p_supplicant_overlay.conf \
+    wpa_supplicant.conf \
+    wpa_supplicant_overlay.conf \
 
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service.legacy
@@ -242,4 +248,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
-    $(LOCAL_PATH)/configs/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_cfg.ini
+    $(LOCAL_PATH)/configs/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_cfg.ini \
+    $(LOCAL_PATH)/configs/hostapd.accept:system/etc/hostapd/hostapd.accept \
+    $(LOCAL_PATH)/configs/hostapd.deny:system/etc/hostapd/hostapd.deny \
+    $(LOCAL_PATH)/configs/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf
