@@ -38,6 +38,7 @@ on boot
 
 on charger
     setprop sys.usb.config mass_storage
+    start thermal-engine
 
 on fs
     write /sys/class/android_usb/android0/iSerial ${ro.serialno}
