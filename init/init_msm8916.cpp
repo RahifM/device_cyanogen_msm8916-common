@@ -39,7 +39,7 @@
 #include <android-base/file.h>
 #include <android-base/properties.h>
 #include <android-base/logging.h>
-//#include "vendor_init.h"
+#include "vendor_init.h"
 #include "property_service.h"
 #include "log.h"
 #include "util.h"
