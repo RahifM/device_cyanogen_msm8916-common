@@ -180,8 +180,8 @@ PRODUCT_PACKAGES += \
     libxml2
 
 # Recovery
-PRODUCT_PACKAGES += \
-    librecovery_updater_cm
+#PRODUCT_PACKAGES += \
+ #   librecovery_updater_cm
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
