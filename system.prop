@@ -26,7 +26,6 @@ debug.enable.sglscale=1
 
 # Media
 media.aac_51_output_enabled=true
-persist.media.treble_omx=false
 drm.service.enabled=1
 vidc.enc.narrow.searchrange=1
 
