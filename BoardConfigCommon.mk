@@ -127,7 +127,7 @@ BOARD_USES_QCOM_HARDWARE := true
 
 # Radio
 MALLOC_SVELTE := true
-TARGET_RIL_VARIANT := caf
+#TARGET_RIL_VARIANT := caf
 
 # Recovery
 #TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_cm
