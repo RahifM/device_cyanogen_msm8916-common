@@ -34,7 +34,7 @@ on early-init
     chmod 0755 /sys/kernel/debug
 
     # Turn off backlight on blank
-    write /sys/class/leds/lcd-backlight/trigger "backlight"
+    # write /sys/class/leds/lcd-backlight/trigger "backlight"
 
 on fs
     wait /dev/block/platform/soc.0/${ro.boot.bootdevice}
