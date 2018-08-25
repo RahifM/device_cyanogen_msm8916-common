@@ -8,7 +8,7 @@ vendor.audio.offload.gapless.enabled=true
 vendor.voice.path.for.pcm.voip=true
 
 # Bluetooth
-qcom.bluetooth.soc=smd
+vendor.qcom.bluetooth.soc=pronto
 ro.bluetooth.dun=true
 ro.bluetooth.hfp.ver=1.7
 ro.bluetooth.sap=true
