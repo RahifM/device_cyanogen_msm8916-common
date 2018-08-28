@@ -255,15 +255,6 @@ service perfd /system/vendor/bin/perfd
     disabled
     writepid /dev/cpuset/system-background/tasks
 
-service thermal-engine /system/vendor/bin/thermal-engine
-    class main
-    user root
-    socket thermal-send-client stream 0666 system system
-    socket thermal-recv-client stream 0660 system system
-    socket thermal-recv-passive-client stream 0666 system system
-    group root
-    writepid /dev/cpuset/system-background/tasks
-
 service ppd /system/vendor/bin/mm-pp-daemon
     class hal
     user system
