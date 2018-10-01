@@ -22,7 +22,7 @@ LOCAL_SHARED_LIBRARIES := \
 
 LOCAL_C_INCLUDES := \
 
-LOCAL_MODULE := android.hidl.base@1.0
+LOCAL_MODULE := android.hidl.base-1.0-java
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 
