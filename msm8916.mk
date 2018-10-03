@@ -24,9 +24,6 @@ PRODUCT_PACKAGES += \
     com.dsi.ant.antradio_library \
     libantradio
 
-PRODUCT_PACKAGES += \
-    android.hidl.base@1.0
-
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
@@ -95,18 +92,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl \
     android.hardware.gnss@1.0-service
-
-# Health HAL
-PRODUCT_PACKAGES += \
-    android.hardware.health@1.0-impl \
-    android.hardware.health@1.0-convert \
-    android.hardware.health@1.0-service \
-    android.hardware.health@1.0 \
-    chargeonlymode
-
-# HIDL
-PRODUCT_PACKAGES += \
-    android.hidl.manager@1.0-java
 
 # Init scripts
 PRODUCT_PACKAGES += \
