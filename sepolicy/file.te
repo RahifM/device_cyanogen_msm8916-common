@@ -1,1 +1,2 @@
 type proc_kernel_sched, fs_type;
+type sysfs_disk_stat, fs_type;
