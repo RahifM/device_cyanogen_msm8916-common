@@ -1,3 +1,4 @@
 allow mm-qcamerad camera_data_file:dir r_dir_perms;
 allow mm-qcamerad mpctl_socket:dir search;
+set_prop(mm-qcamerad, camera_prop);
 unix_socket_connect(mm-qcamerad, mpctl, perfd)
