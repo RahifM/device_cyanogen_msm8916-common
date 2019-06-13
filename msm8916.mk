@@ -54,10 +54,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl \
     android.hardware.bluetooth@1.0-service
 
-# Charger
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/sbin/chargeonlymode:root/sbin/charger
-
 # Display
 PRODUCT_PACKAGES += \
     gralloc.msm8916 \
