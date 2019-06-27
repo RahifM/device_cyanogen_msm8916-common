@@ -60,10 +60,6 @@ TARGET_QCOM_AUDIO_VARIANT := caf-msm8916
 # Bluetooth
 BOARD_HAVE_BLUETOOTH_QCOM := true
 
-# Camera
-TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
-    /system/vendor/bin/mm-qcamera-daemon=23
-
 # Display
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
