@@ -40,7 +40,7 @@
 #include <android-base/strings.h>
 
 #include "property_service.h"
-//#include "vendor_init.h"
+#include "vendor_init.h"
 
 #include "init_msm8916.h"
 
@@ -53,9 +53,6 @@ __attribute__ ((weak))
 void init_target_properties()
 {
 }
-
-namespace android {
-namespace init {
 
 static void init_alarm_boot_properties()
 {
@@ -93,5 +90,3 @@ void vendor_load_properties()
     init_target_properties();
     init_alarm_boot_properties();
 }
-}  // namespace init
-}  // namespace android
