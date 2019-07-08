@@ -47,7 +47,7 @@
 using android::base::GetProperty;
 using android::base::ReadFileToString;
 using android::base::Trim;
-using android::init::property_set;
+//using android::init::property_set;
 
 __attribute__ ((weak))
 void init_target_properties()
