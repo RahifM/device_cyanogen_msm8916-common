@@ -4,7 +4,7 @@
 /sys/devices/soc\.0/[a-z0-9]+\.i2c/i2c-[0-9]/[0-9]-[a-z0-9]+/leds(/.*)?   u:object_r:sysfs_leds:s0
 
 # Lights HAL
-/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.aw2013-wt88047_64    u:object_r:hal_light_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.aw2013    u:object_r:hal_light_default_exec:s0
 
 # Shell files
 /system/vendor/bin/init\.qcom\.mem\.sh                                    u:object_r:qti_init_shell_exec:s0
