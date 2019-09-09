@@ -33,7 +33,6 @@
 #include <unistd.h>
 #include <sys/stat.h>
 #include <sys/types.h>
-#include <sys/sysinfo.h>
 
 #include <android-base/file.h>
 #include <android-base/logging.h>
@@ -84,40 +83,8 @@ static void init_alarm_boot_properties()
     }
 }
 
-void set_zram_size(void)
-{
-    FILE *f = fopen("/sys/block/zram0/disksize", "wb");
-    int MB = 1024 * 1024;
-    std::string zram_disksize;
-    struct sysinfo si;
-
-    // Check if zram exist
-    if (f == NULL) {
-        return;
-    }
-
-    // Initialize system info
-    sysinfo(&si);
-
-    // Set zram disksize
-    if (si.totalram > 2048ull * MB) {
-        zram_disksize = std::to_string(int(si.totalram / MB / 3));
-    } else if (si.totalram > 1024ull * MB) {
-        zram_disksize = std::to_string(int(si.totalram / MB / 2.5));
-    } else {
-        zram_disksize = std::to_string(int(si.totalram / MB / 2));
-    }
-
-    // Write disksize to sysfs
-    fprintf(f, "%sM", zram_disksize.c_str());
-
-    // Close opened file
-    fclose(f);
-}
-
 void vendor_load_properties()
 {
-    set_zram_size();
     // Init a dummy BT MAC address, will be overwritten later
     property_set("ro.boot.btmacaddr", "00:00:00:00:00:00");
     init_target_properties();
