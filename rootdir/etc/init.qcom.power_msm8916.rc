@@ -1,5 +1,8 @@
 import init.recovery.twrp.rc
 
+    # Drop write bit from cpu_min_freq so that libqti-perfd can't set it
+    chmod 0444 /sys/module/msm_performance/parameters/cpu_min_freq
+
 on enable-low-power
     start qcom-mem
 
@@ -64,8 +67,8 @@ on enable-low-power
     write /dev/cpuset/top-app/cpus 0-3
     write /dev/cpuset/camera-daemon/cpus 0-3
 
-    rm /data/system/perfd/default_values
-    start perfd
+    # Set perfd properties
+    setprop sys.post_boot.parsed 1
 
     # enable thermal core_control now
     write /sys/kernel/msm_thermal/zone0 "1152000 64 61"

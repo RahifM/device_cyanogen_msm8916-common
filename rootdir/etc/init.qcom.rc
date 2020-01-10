@@ -68,9 +68,9 @@ on post-fs-data
     # Create directory used by display clients
     mkdir /data/misc/display 0770 system graphics
 
-    # Create PERFD deamon related dirs
-    mkdir /data/misc/perfd 2755 root system
-    mkdir /data/system/perfd 2770 root system
+    # Move to o-mr1 perfd dir schema
+    mkdir /data/vendor/perfd 0770 root system
+    rm /data/vendor/perfd/default_values
 
     # Create directories for Location services
     mkdir /data/misc/location 0770 gps gps
@@ -263,13 +263,6 @@ service qseecomd /system/vendor/bin/qseecomd
     class core
     user root
     group root
-    writepid /dev/cpuset/system-background/tasks
-
-service perfd /system/vendor/bin/perfd
-    class main
-    user root
-    group root readproc system
-    disabled
     writepid /dev/cpuset/system-background/tasks
 
 service time_daemon /system/vendor/bin/time_daemon
