@@ -212,6 +212,11 @@ else ifeq ($(TARGET_BOARD_PLATFORM_VARIANT),msm8916)
 $(call inherit-product, device/cyanogen/msm8916-common/system_prop_msm8916.mk)
 endif
 
+# TimeKeep
+PRODUCT_PACKAGES += \
+    timekeep \
+    TimeKeep
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
