@@ -187,8 +187,8 @@ PRODUCT_COPY_FILES += \
 endif
 
 # Power
-PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service-qti
+#PRODUCT_PACKAGES += \
+#    android.hardware.power@1.2-service-qti
 
 # Radio
 PRODUCT_PACKAGES += \
