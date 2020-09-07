@@ -61,6 +61,10 @@ PRODUCT_PACKAGES += \
 # Boot Animtion
 TARGET_BOOTANIMATION_HALF_RES := true
 
+# Custom priv-app permission
+PRODUCT_COPY_FILES += \
+    device/cyanogen/msm8916-common/configs/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml
+
 # Display
 PRODUCT_PACKAGES += \
     gralloc.msm8916 \
