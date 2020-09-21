@@ -209,7 +209,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcnefeatureconfig \
     librmnetctl \
-    libxml2
+    libxml2 \
+    libshims_ril
 
 # Recovery
 PRODUCT_PACKAGES += \
