@@ -12,7 +12,7 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.aw2013             u:object_r:hal_light_default_exec:s0
 
 # Power HAL
-/(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.2-service-qti      u:object_r:hal_power_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power-service-qti      u:object_r:hal_power_default_exec:s0
 
 # Shell files
 /(vendor|system/vendor)/bin/init\.qcom\.mem\.sh                           u:object_r:qti_init_shell_exec:s0
