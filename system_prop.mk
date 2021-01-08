@@ -33,7 +33,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.disable_backpressure=1 \
     debug.sf.latch_unsignaled=1 \
     persist.hwc.mdpcomp.enable=true \
-    persist.hwc.ptor.enable=true
+    persist.hwc.ptor.enable=true \
+    ro.surface_flinger.supports_background_blur=false \
+    persist.sys.sf.disable_blurs=true
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
