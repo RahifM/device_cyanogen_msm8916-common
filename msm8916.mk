@@ -61,6 +61,10 @@ PRODUCT_PACKAGES += \
 # Boot Animtion
 TARGET_BOOTANIMATION_HALF_RES := true
 
+# Disable psi monitors
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lmk.use_psi=false
+
 # Display
 PRODUCT_PACKAGES += \
     gralloc.msm8916 \
