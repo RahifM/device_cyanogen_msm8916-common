@@ -271,3 +271,9 @@ PRODUCT_COPY_FILES += \
 # Signapk
 PRODUCT_HOST_PACKAGES += \
     signapk
+
+PRODUCT_PACKAGES += \
+    MatLog
+
+PRODUCT_COPY_FILES += \
+    device/cyanogen/msm8916-common/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml
