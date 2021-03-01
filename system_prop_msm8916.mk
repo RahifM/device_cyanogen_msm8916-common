@@ -4,4 +4,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.min_freq_0=400000
+    ro.min_freq_0=200000 \
+    ro.min_freq_1=200000 \
+    ro.min_freq_2=200000 \
+    ro.min_freq_3=200000
