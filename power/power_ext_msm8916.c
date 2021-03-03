@@ -50,7 +50,7 @@ void power_set_interactive_ext(int on)
 {
 /* radomly turnON cpu4 and cpu5 after sleep. sometimes core_ctl failes to TurnOn CPUs */
      if (on) {
-         ALOGD("TurningOn Cpus")
+         ALOGD("TurningOn Cpus");
          sysfs_write(CPU0, "1");
          sysfs_write(CPU1, "1");
      }
